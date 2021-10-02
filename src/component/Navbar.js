@@ -1,6 +1,7 @@
 import React from 'react'
 
 import "./Navbar.css";
+import { Link } from 'react-router-dom';
 
 export default function navbar() {
     return (
@@ -8,22 +9,22 @@ export default function navbar() {
         <header>
         <nav>
             <img src="img/flood.png" alt="" />
-            <h3>Flood</h3>
-            <div class="navlinks" id="happy">
+            <h3>Flood Detection</h3>
+            <div class="navas" id="happy">
                 <i class="fas fa-times fa-custom" onclick="hidemenu()"></i>
                 <ul class="navbar">
-                    <li> <a href=""> Home</a></li>
-                    <li> <a href="#about"> About</a></li>
-                    <li> <a href="#footer"> Contact</a></li>
-                    <li> <a href="login.html"> Login</a></li>
+                    <li> <Link to=""> Home</Link></li>
+                    <li> <Link to="#about"> About</Link></li>
+                    <li> <Link to="#footer"> Contact</Link></li>
+                    <li> <Link to="/login"> Login</Link></li>
                 </ul>
             </div>
             <i class="fas fa-bars fa-custom" onclick="showmenu()"></i>
         </nav>
         <div class="text-box">
-            <h1>Early Flood Detection</h1>
-            <p>Want To Take First Step</p>
-            <a href="upload.html" class="hero-btn">Get Started</a>
+            <h1>EARLY FLOOD DETECTION</h1>
+            <p>Want to Take First Step</p>
+            <Link to="Upload" class="hero-btn">Get Started</Link>
         </div>
     </header>
 
@@ -65,10 +66,10 @@ export default function navbar() {
                 <div class="footer-col">
                     <h3>Follow Us</h3>
                     <div class="social">
-                        <h2><a href="#"><img src="img/facebook-logo.png" alt="" height="20px"/></a></h2>
-                        <h2><a href="#"><img src="img/twitter.png" alt="" height="20px"/></a></h2>
-                        <h2> <a href="#"> <img src="img/instagram.png" alt="" height="20px"/></a></h2>
-                        <h2> <a href="#"> <img src="img/linkedin.png" alt="" height="20px"/></a></h2>
+                        <h2><Link to="#"><img src="img/facebook-logo.png" alt="" height="20px"/></Link></h2>
+                        <h2><Link to="#"><img src="img/twitter.png" alt="" height="20px"/></Link></h2>
+                        <h2> <Link to="#"> <img src="img/instagram.png" alt="" height="20px"/></Link></h2>
+                        <h2> <Link to="#"> <img src="img/aedin.png" alt="" height="20px"/></Link></h2>
                     </div>
                 </div>
             </div>
