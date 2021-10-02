@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up:</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='login.css')}}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="{{url_for('static', filename='img/flood.png')}}" alt="">
+            <h3>Flood</h3>
+            <div class="navlinks" id="happy">
+                <i class="fas fa-times fa-custom" onclick=hidemenu()></i>
+                <ul class="navbar">
+                    <li> <a href=""> Home</a></li>
+                    <li> <a href="#about"> About</a></li>
+                    <li> <a href=""> Contact</a></li>
+                    <li> <a href=""> Sign up</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars fa-custom" onclick=showmenu()></i>
+        </nav>
+
+    </header>
+
+    <section class="signup-form">
+        <div class="container">
+            <h1>Login</h1>
+            <form action="/" id="" method="post">
+                <div class="mail txt">
+                    <div class="heading">Enter Email</div>
+                    <input type="email" name="email" id="" placeholder="Enter your email">
+                </div>
+                <div class="mail txt">
+                    <div class="heading">Enter password</div>
+                    <input type="password" name="" id="" placeholder="enter your password">
+                </div>
+                <button class="btn">Login</button>
+                <div class="mail txt">
+                  <h3>  Don't have account? <a href="sign.html">Sign Up</a> </h3>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
